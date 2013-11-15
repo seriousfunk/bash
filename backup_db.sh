@@ -17,7 +17,7 @@ db_user=your_user_name
 db_pwd=your-password
 
 # database host
-# db_host=mysql_host
+db_host=mysql_host
 
 # database name
 db_name=your_database_name
