@@ -2,7 +2,7 @@
 #
 # backup www (or any) directory
 #
-# 
+# https://github.com/seriousfunk/bash/blob/master/backup_dir.sh
 
 # set script parameters
 #------------------------------------------------------------------------------
