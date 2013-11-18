@@ -2,6 +2,7 @@
 #
 # backup MySQL (wordpress) database using mysqldump
 #
+# https://github.com/seriousfunk/bash/blob/master/backup_db.sh
 
 # set script parameters
 #------------------------------------------------------------------------------
