@@ -30,7 +30,7 @@ find $backup_location -name "${file_prefix_monthly}*" -mtime +$num_daily_backups
 filename=${backup_location}${file_prefix}-$(date +%Y%m%d).tgz
 monthlyfilename=${backup_location}${file_prefix_monthly}-$(date +%Y%m).tgz
 
-# add multiple exclude switches to exclude stuff:  --exclude='patter*' --exclude='file2'
+# add multiple exclude switches to exclude stuff:  --exclude='pattern*' --exclude='file2'
 tar -czf $filename -C $directory_to_backup . 
 
 # check for existence of monthly backup with size > 0
