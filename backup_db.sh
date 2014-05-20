@@ -41,7 +41,7 @@ filename=${backup_location}${file_prefix}-$(date +%Y%m%d).sql.gz
 monthlyfilename=${backup_location}${file_prefix_monthly}-$(date +%Y%m).sql.gz
 
 # dump to a gzip file
-mysqldump -h$db_host -u$db_user -p$db_pwd -c $db_name --add-drop-table --complete-insert | gzip -c > $filename
+mysqldump -h$db_host -u$db_user -p$db_pwd -c $db_name --add-drop-table --complete-insert --hex-blob | gzip -c > $filename
 
 # check for existence of monthly backup with size > 0
 # only copy daily to monthly name if we haven't already done so this month
